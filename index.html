@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Website</title>
+    <style>
+        body {
+            background-color: #888;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff1;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+       .dropdown a {
+    font-size: 24px; /* Sesuaikan ukuran font sesuai kebutuhan */
+    text-decoration: none; /* Hapus garis bawah pada link */
+    display: block; /* Tampilkan tautan sebagai elemen blok */
+    padding: 10px; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+        #video-section {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+
+        #video-section a {
+            width: 100%; /* Setiap postingan akan mengambil seluruh lebar pada mode ponsel */
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        #video-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        #video-section p {
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.8);
+            transition: width 0.3s ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+            #video-section a {
+                width: calc(30% - 0px); /* Menyusun dua postingan dalam satu baris pada mode desktop */
+            }
+        }
+  main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 60px; /* Sesuaikan nilai ini dengan tinggi footer */
+       }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    height: 15px;
+}
+  #logo img {
+    width: 150px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: 40px; /* Sesuaikan dengan tinggi yang diinginkan */
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+          <li class="dropdown">
+          <a href="#">≣</a>
+          <div class="dropdown-content">
+            
+                <a href="index.html">Home</a>
+                <a href="#">Trending</a>
+                <a href="#">Categories</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <a id="logo" href="index.html">
+        <img src="logo/1.png" alt="YourLogo">
+    </a>
+    
+</header>
+
+<main>
+    <section id="video-section">
+        <a href="a/episode1.html">
+            <img src="logo/wdqk.jpg" alt="Video Thumbnail">
+            <p>Wu Dong Qian Kun Season 5</p>
+        </a>
+
+        <a href="btth/episode1.html">
+            <img src="logo/btth.jpg" alt="Video Thumbnail">
+            <p>Battle through the heavens </p>
+        </a>
+
+        <a href="martial-god-asura/episode1.html">
+            <img src="logo/mga.jpg" alt="Video Thumbnail">
+            <p>Martial God Asura </p>
+        </a>
+        <a href="https://www.youtube.com/embed/VIDEO_ID">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERTGgjUNcj7HT8_VNtLIqPZ8MJoZrPdIIXw&usqp=CAU" alt="Video Thumbnail">
+            <p>Nama Video</p>
+        </a>
+
+        <a href="https://www.youtube.com/embed/VIDEO_ID">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERTGgjUNcj7HT8_VNtLIqPZ8MJoZrPdIIXw&usqp=CAU" alt="Video Thumbnail">
+            <p>Nama Video</p>
+        </a>
+
+        <a href="https://www.youtube.com/embed/VIDEO_ID">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTERTGgjUNcj7HT8_VNtLIqPZ8MJoZrPdIIXw&usqp=CAU" alt="Video Thumbnail">
+            <p>Nama Video</p>
+        </a>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+</footer>
+  
+</script>
+</body>
+</html>
